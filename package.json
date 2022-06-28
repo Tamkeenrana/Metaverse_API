@@ -1,0 +1,18 @@
+{
+  "name": "mv-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mujahid",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.2.0"
+  },
+  "dependencies": {
+    "cypress-xpath": "^2.0.0",
+    "typescript": "^4.7.4"
+  }
+}
