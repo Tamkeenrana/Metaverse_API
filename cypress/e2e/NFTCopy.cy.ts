@@ -18,5 +18,11 @@ describe('NFT on open sea api', () => {
           expect(response.status).to.eq(200);
         })
     });
+    it('should not show contracts', () => {
+      cy.request({ method: 'GET', url: 'https://staging-gateway.wrld.xyz/contracts', headers: {}, failOnStatusCode: false }).then(
+        (response) => {
+          expect(response.body).contain('Unauthorized')
+        })
+    })
   })
 })
